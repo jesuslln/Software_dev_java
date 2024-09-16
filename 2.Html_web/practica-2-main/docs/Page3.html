@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<head>
+    <title>Contact</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Html University project">
+    <meta name="keywords" content="HTML, Firefox, Contact">
+    <meta name="author" content="Jesus Lopez Lopez Neira">
+    
+    <table>
+        <thead>
+            <td><a href="./Index.html">Home</a></td>
+            <td><a href="./Page1.html">About</a></td>
+            <td><a href="./Page2.html">IT Development</a></td>
+            <td><a href="./Page3.html">Contact</a></td>
+        </thead>
+    </table>
+</head>
+<br>
+<hr>
+<h1>Social Network</h1>
+<table>
+    <tr>
+        <th>
+            <a href="https://twitter.com/mozilla?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/1200px-Twitter-logo.svg.png" 
+            alt="Espiritu de Hugo" width="40" >
+            </a>
+        </th>
+        <th>
+            <a href="https://www.instagram.com/mozilla/?hl=es">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/800px-Instagram_logo_2016.svg.png" 
+                alt="La foto no carga" width="40">
+            </a>
+        </th>
+        <th>
+            <a href="https://www.youtube.com/user/firefoxchannel">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png" 
+                alt="" width="40">
+            </a>
+        </th>
+        <th>
+            <a href="https://www.reddit.com/r/firefox/">
+                <img src="https://cdn.worldvectorlogo.com/logos/reddit-4.svg" 
+                alt="" width="40">
+            </a>
+        </th>
+    </tr>
+</table>
+
+<body>
+    <center><h1>Contact</h1></center>
+    <br>
+    <br>
+    <form action="/your_backend_url" method="post" enctype="application/x-www-form-urlencoded" autocomplete="on">
+        <fieldset>
+            <legend>Personal data section:</legend>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>            
+            <input type="text" id="lname" name="lname"><br>            
+            <label for="Bday">Birthday</label><br>
+            <input type="date" name="Bday" id="Bday">
+            <br>
+            <label for="phone">Phone Number:</label><br>
+            <select name="phregion" id="phregion">
+                <option value="+34">+34</option>
+                <option value="+44">+44</option>
+            </select>
+            <input type="number" id=phone name=phone maxlength="9"/><br><br> 
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Message</legend>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            <br>
+            <input type="submit" value="Submit Message">
+            <input type="reset">
+        </fieldset>
+    </form>
+</body>

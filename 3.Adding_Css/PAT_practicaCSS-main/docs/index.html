@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Mozilla Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Html University project">
+    <meta name="keywords" content="HTML, Firefox, Home">
+    <meta name="author" content="Jesus Lopez Lopez Neira">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+
+    <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+      <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+    </symbol>
+    </svg>
+
+    <style>
+
+    .alert{
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        }
+
+    .btn-close{
+        position: relative;
+        float: right;
+    }
+    .center-title{
+        text-align: center;
+    }
+
+
+
+    </style>
+
+</head>
+<body>
+
+      <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+    <nav class="navbar navbar-light fixed-top" style="background-color: #9f4bee;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://www.mozilla.org/en-US/">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAeFBMVEUAAAD////8/Pz19fXu7u7T09P4+PhmZmZKSkovLy/d3d0SEhJjY2M3NzcEBASrq6uJiYm9vb2Ojo6hoaEiIiLf399WVlazs7MYGBh+fn7m5ubExMRJSUnW1tZra2sqKipAQECZmZl1dXU7OzvBwcEVFRVTU1N6enp5ndV4AAAEu0lEQVR4nO2cC3OiPBSGk3BRURFFvIBYte23//8fbghCEU4Cdoy6871PZ7qO5mCenJCLjcsYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfk14V4GQLG5+lnq1911fQVjV63BcLb68IMiz5SI6fqrXaMXq+clsH2+zPAm8r8XqOH6y3sdoZmS0aaYi3MSBK/gPwg1iVYKutnz2M/LqCFE8cJLtaPc0P8aOvIdkV9c+3Od1PeXv2tSLNDlkbLN0irI/LXK9aPzxNMMRb6aEIPiuikYp99uFS1nunmunyq54PPaq9mjhc7GdXsvb7rT9htOyvrK2upJC/qSzG0EJmy6Ml3aiquDrDYtK7AWdjUpRiPhWkY0DXx+hWiX7KMq9g6GsRGwsowxFtmvWduYbA1T3TefsDQwTaci2qs31RYX6yet5I2RHNRKZrl1EOJPX34eiyOHS0EObeKHKidS8mDLYwJ2/3LAYS1fNqcGA4NvrKHpwhjVJ2YCvNmQbrhnzCcU9U4NjKvouew1QjfJqw3UihqWwqLHsdZJFMeENjBCzFxuKfDGsqmVp/iWvOSsfDiRldkeb3hyaJjVK8T/2HdwRIPljUW+I4cBbsDZcsmh4/hSB3Tmx1/BmzDAtbLhqDCGm7RT2NJHgG4t+gwxvShhLqxez+/q1ZGk1h83dk37JotYfWaQGSjYdLdI+1XL49c6nMmIcB8W+RKOeWt1KnVYV0dm0d3DieSNqGrl9itzfnppvdEl0jvYnjFrW0daX5+OihNrMl/udU24SlLV2Z6xcplY9cJ0V4zJlyM92xeoN2rizv62R24Z6F1Bqsl1iNEx+Fpxh9S4e3U2fsK65cqBWy6pKXns8L/K40/TT4qb13Qlj3Z0R8SGBCkifZDgm9wPFvUOPBGf9PCA25OdvR3q5Kty1ZbUrGkPBV3T5b3q0EeK6xyDw6G6qMv4ESEPZ6i5dXG386fuKrzUz3J4OcE72rJroemlc3nddZmQnlU9mmgA2d0lD3+6qpkZj6By0EQk59gtx1EZk1FtwMbLh00VjmOsjvujh1NEPHOc3NDRNVivKUPBEH3F5R8P9ffU1fzBxeEdDwyiwIavLL/qINbkyfK2hYaBhJ3qy0A80bOe+n6E710fM6YwYsr5L388wNayoJmRGTFmfkuv11xqaPrKlDd2TPiIkN13/nKGhX8sdFAwtAsMuMCSAoVVg2AWGBDC0Cgy7wJAAhlaBYRcYEsDQKjDsAkMCGFoFhl1gSABDq3zShoYIjaHp7AhtaPXv+BevIiePZDneDXG/oZ/Xpbt/SSQMhRBpXYfV4w8MV+ddheZAfuvo5XKAYRUjeDTI8PpL/bt4sJ4yJFRabdyozADDRsAgw5v3tmJ4rRB9hKud2H7D5pcNhxk2D+nazCFNW7vX8CZgaA5/eL5hmyG9FIYwhCEMYQjDf9Fw+Jd4Oqu2ntDfGT546X2X4V05FO2Vd/mdi6cbkqdgH2I4dG/RMXwwe+ce/Mbp2JBN0p7SrdO3MjmZb4wQMXs4v+8SYX9w63Xr/0MEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwP+cvR5xJi4Axj/kAAAAASUVORK5CYII=" alt=""
+                width="30" height="30">
+                <strong>Mozilla</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                        Website Menu</h5>
+                    <button type="button" class="btn-close text-reset" 
+                        data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Index.html">
+                                <h3>Home</h3>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Page1.html">
+                                <h3>About</h3>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Page2.html">
+                                <h3>Internet Development</h3>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Page3.html">
+                                <h3>Contact</h3>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <br>
+    <br>
+    <br>
+    <div class="body-container">
+
+        <div class="row">
+
+            <div class="col-1"></div>
+
+            <div class="col">
+                        
+                <p>
+                    <a href="https://www.mozilla.org/en-US/"> <img src="https://3u26hb1g25wn1xwo8g186fnd-wpengine.netdna-ssl.com/files/2019/10/logo-firefox.svg" alt="El logo de Firefox no carga"
+                        width="350" height="50"></a>
+                </p>   
+                <br>
+                <h2>This page is developed for a university project</h2>
+
+
+
+                <br>
+                <p>
+                    This is a small Mozilla website. It consists of 4 html documents. 
+
+                <br>
+                <br>
+                    Only html is used in this project. In furthur
+                    projects the documents will be developed with Css and JavaScript.
+                </p>
+                <br>
+                <p> check the <a href="./Page1.html">About</a> section and look at the firefox <a href="#bottom"> market presence</a> through history</p>
+
+                <h2>List of Products</h2>
+                <details>
+                    <summary>Click</summary>
+                    <p>Choose your favorite one!</p>
+                </details>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-1"></div>
+
+            <div class="col">
+
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                    </div>
+            
+                    <div class="carousel-inner">
+            
+                      <div class="carousel-item active">
+                        <img src="https://ffp4g1ylyit3jdyti1hqcvtb-wpengine.netdna-ssl.com/press-uk/files/2018/11/SP_FX_Monitor_blogheader_01@2x.jpg" 
+                        class="d-block w-100" alt="...">
+                      </div>
+            
+                      <div class="carousel-item">
+                        <img src="https://ffp4g1ylyit3jdyti1hqcvtb-wpengine.netdna-ssl.com/wp-content/blogs.dir/278/files/2018/03/FF58_Moz.org_FacebookContainerExtension_blog-header-v1-02.jpg" 
+                        class="d-block w-100" alt="..." width="640" height="350">
+                      </div>
+            
+                      <div class="carousel-item">
+                        <img src="https://www.mozilla.org/media/img/trademarks/pocket_ios.ef3438524369.png" 
+                         alt="..." width="200" height="200">
+                      </div>
+            
+                      <div class="carousel-item">
+                        <img src="https://www.mozilla.org/media/img/products/vpn/common/social-share.fd20884beaac.png" 
+                        class="d-block w-100" alt="..." width="640" height="350">
+                      </div>
+            
+                      <div class="carousel-item">
+                        <img src="https://relay.firefox.com/static/images/share-relay.jpg" 
+                        class="d-block w-100" alt="..." width="640" height="350">
+                      </div>
+            
+                      <div class="carousel-item">
+                        <img src="https://user-media-prod-cdn.itsre-sumo.mozilla.net/uploads/products/2020-08-04-08-27-27-baec64_1.png" 
+                         alt="..." width="200" height="200">
+                      </div>
+            
+                    </div>
+            
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
+            </div>
+
+            <div class="col-1"></div>
+
+        </div>
+        
+    </div>
+
+
+    <br>
+    <br>
+      
+    <div class="row">
+
+        <a id="bottom"></a>
+        <h3 class="center-title">Development in the Market</h3>
+        <br>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-3"></div>
+        
+        <div class="col-4">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/W4wWdmfOibY?start=87" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="col-4"></div>
+
+    </div>
+      <br>
+      <br>
+
+
+    <div class="alert alert-primary" role="alert">
+        <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" 
+            aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+            This is a university project (Dark theme web)
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" ></button>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="row">
+
+        <div class="col-1"></div>
+
+        <div class="col">
+            <footer class="footer bg-light">
+                <div class="container" >
+                    <div class="row">
+                        <div class="col-lg-6 h-100 text-center text-lg-start my-auto" >
+                            <ul class="list-inline mb-2">
+                                <li class="list-inline-item"><a href="#!">About</a></li>
+                                <li class="list-inline-item">⋅</li>
+                                <li class="list-inline-item"><a href="#!">Contact</a></li>
+                                <li class="list-inline-item">⋅</li>
+                                <li class="list-inline-item"><a href="#!">Terms of Use</a></li>
+                                <li class="list-inline-item">⋅</li>
+                                <li class="list-inline-item"><a href="#!">Privacy Policy</a></li>
+                            </ul>
+                            <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2021. All Rights Reserved.</p>
+                        </div>
+                        <div class="col-lg-6 h-100 text-center text-lg-end my-auto">
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item me-4">
+                                    <a href="#!"><i class="bi-facebook fs-3"></i></a>
+                                </li>
+                                <li class="list-inline-item me-4">
+                                    <a href="#!"><i class="bi-twitter fs-3"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#!"><i class="bi-instagram fs-3"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+    </div>
+
+
+</body>
+</html>

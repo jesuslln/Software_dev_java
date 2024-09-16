@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>About</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Html University project">
+    <meta name="keywords" content="HTML, Firefox, About">
+    <meta name="author" content="Jesus Lopez Lopez Neira">
+
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <style>
+
+    h1{
+      text-align: center;
+    }
+
+  </style>
+
+
+</head>
+<body>
+
+      <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+    <nav class="navbar navbar-light fixed-top" style="background-color: #9f4bee;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="https://www.mozilla.org/en-US/">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAeFBMVEUAAAD////8/Pz19fXu7u7T09P4+PhmZmZKSkovLy/d3d0SEhJjY2M3NzcEBASrq6uJiYm9vb2Ojo6hoaEiIiLf399WVlazs7MYGBh+fn7m5ubExMRJSUnW1tZra2sqKipAQECZmZl1dXU7OzvBwcEVFRVTU1N6enp5ndV4AAAEu0lEQVR4nO2cC3OiPBSGk3BRURFFvIBYte23//8fbghCEU4Cdoy6871PZ7qO5mCenJCLjcsYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfk14V4GQLG5+lnq1911fQVjV63BcLb68IMiz5SI6fqrXaMXq+clsH2+zPAm8r8XqOH6y3sdoZmS0aaYi3MSBK/gPwg1iVYKutnz2M/LqCFE8cJLtaPc0P8aOvIdkV9c+3Od1PeXv2tSLNDlkbLN0irI/LXK9aPzxNMMRb6aEIPiuikYp99uFS1nunmunyq54PPaq9mjhc7GdXsvb7rT9htOyvrK2upJC/qSzG0EJmy6Ml3aiquDrDYtK7AWdjUpRiPhWkY0DXx+hWiX7KMq9g6GsRGwsowxFtmvWduYbA1T3TefsDQwTaci2qs31RYX6yet5I2RHNRKZrl1EOJPX34eiyOHS0EObeKHKidS8mDLYwJ2/3LAYS1fNqcGA4NvrKHpwhjVJ2YCvNmQbrhnzCcU9U4NjKvouew1QjfJqw3UihqWwqLHsdZJFMeENjBCzFxuKfDGsqmVp/iWvOSsfDiRldkeb3hyaJjVK8T/2HdwRIPljUW+I4cBbsDZcsmh4/hSB3Tmx1/BmzDAtbLhqDCGm7RT2NJHgG4t+gwxvShhLqxez+/q1ZGk1h83dk37JotYfWaQGSjYdLdI+1XL49c6nMmIcB8W+RKOeWt1KnVYV0dm0d3DieSNqGrl9itzfnppvdEl0jvYnjFrW0daX5+OihNrMl/udU24SlLV2Z6xcplY9cJ0V4zJlyM92xeoN2rizv62R24Z6F1Bqsl1iNEx+Fpxh9S4e3U2fsK65cqBWy6pKXns8L/K40/TT4qb13Qlj3Z0R8SGBCkifZDgm9wPFvUOPBGf9PCA25OdvR3q5Kty1ZbUrGkPBV3T5b3q0EeK6xyDw6G6qMv4ESEPZ6i5dXG386fuKrzUz3J4OcE72rJroemlc3nddZmQnlU9mmgA2d0lD3+6qpkZj6By0EQk59gtx1EZk1FtwMbLh00VjmOsjvujh1NEPHOc3NDRNVivKUPBEH3F5R8P9ffU1fzBxeEdDwyiwIavLL/qINbkyfK2hYaBhJ3qy0A80bOe+n6E710fM6YwYsr5L388wNayoJmRGTFmfkuv11xqaPrKlDd2TPiIkN13/nKGhX8sdFAwtAsMuMCSAoVVg2AWGBDC0Cgy7wJAAhlaBYRcYEsDQKjDsAkMCGFoFhl1gSABDq3zShoYIjaHp7AhtaPXv+BevIiePZDneDXG/oZ/Xpbt/SSQMhRBpXYfV4w8MV+ddheZAfuvo5XKAYRUjeDTI8PpL/bt4sJ4yJFRabdyozADDRsAgw5v3tmJ4rRB9hKud2H7D5pcNhxk2D+nazCFNW7vX8CZgaA5/eL5hmyG9FIYwhCEMYQjDf9Fw+Jd4Oqu2ntDfGT546X2X4V05FO2Vd/mdi6cbkqdgH2I4dG/RMXwwe+ce/Mbp2JBN0p7SrdO3MjmZb4wQMXs4v+8SYX9w63Xr/0MEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwP+cvR5xJi4Axj/kAAAAASUVORK5CYII=" alt=""
+            width="30" height="30">
+            <strong>Mozilla</strong>
+        </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                        Website Menu</h5>
+                    <button type="button" class="btn-close text-reset" 
+                        data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Index.html">
+                                <h3>Home</h3>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Page1.html">
+                                <h3>About</h3>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Page2.html">
+                                <h3>Internet Development</h3>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Page3.html">
+                                <h3>Contact</h3>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <br>
+    <br>
+    <br>
+    <!-- the center tag is deprecated due to the use of css-->
+
+    <div class="body-container">
+
+      <h1> Mozilla Corporation</h1>
+      <hr>
+      <br>
+
+      <div class="row">
+
+        <div class="col-1"></div>
+
+        <div class="col">
+
+          <h2>Pledge for a Healthy Internet</h2>
+      
+          <p>
+              <em>
+                  <q>
+              The open, global internet is the most powerful
+              communication and collaboration resource we
+              have ever seen. It embodies some of our deepest
+              hopes for human progress. It enables new
+              opportunities for learning, building a sense of shared
+              humanity, and solving the pressing problems facing
+              people everywhere.
+                  </q>
+      
+              <br>
+              <br>
+      
+                  <q>
+              Over the last decade we have seen this promise
+              fulfilled in many ways. We have also seen the power
+              of the internet used to magnify divisiveness, incite
+              violence, promote hatred, and intentionally manipulate
+              fact and reality. <b>We have learned that we should more
+              explicitly set out our aspirations for the human
+              experience of the internet. We do so now. </b>
+                  </q>
+                  <h4><a href="https://www.mozilla.org/en-US/about/manifesto/">Mozilla Manifiesto</a></h4>
+              </em>
+              <br>
+              Also check the <a href="https://www.mozilla.org/en-US/mission/">Vision Statement</a>
+          </p>
+
+        </div>
+
+
+      </div>
+ 
+    <br>
+    <br>
+    <br>
+
+
+    <div class="row">
+
+      <div class="col-1"></div>
+
+      <div class="col">
+
+        <h2>Mozilla's 10 principles</h2>
+
+        <br>
+    
+        <div class="accordion accordion-flush" id="accordionExample">
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne" >
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                <p class="accordion-title">Principle 1</p>
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p class="text-principle">
+                        The internet is an integral part of
+                        modern life—a key component in education,
+                        communication, collaboration, business,
+                        entertainment and society as a whole.
+                    </p>
+                </div>
+              </div>
+            </div>
+    
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <p class="accordion-title" >Principle 2</p>
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p class="text-principle">
+                        The internet is a global public resource
+                        that must remain open and accessible.
+                    </p>
+                </div>
+              </div>
+            </div>
+    
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <p class="accordion-title" >Principle 3</p>
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p class="text-principle">
+                        The internet must enrich the lives of
+                        individual human beings.
+                    </p>
+                </div>
+              </div>
+    
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour" >
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                  data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  <p class="accordion-title">Principle 4</p>
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p class="text-principle">
+                        Individuals’ security and privacy on the
+                        internet are fundamental and must not be
+                        treated as optional.
+                    </p>
+                </div>
+                </div>
+              </div>
+    
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive" >
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                  data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                  <p class="accordion-title">Principle 5</p>
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p class="text-principle">
+                        Individuals must have the ability to shape
+                        the internet and their own experiences on it.
+                    </p>
+                </div>
+                </div>
+              </div>
+    
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix" >
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                  data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                  <p class="accordion-title">Principle 6</p>
+                  </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p class="text-principle">
+                            The effectiveness of the internet as a
+                            public resource depends upon interoperability
+                            (protocols, data formats, content), innovation
+                            and decentralized participation worldwide.
+                        </p>
+                    </div>
+                </div>
+              </div>
+    
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSeven" >
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                  data-bs-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                  <p class="accordion-title">Principle 7</p>
+                  </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p class="text-principle">
+                        Free and open source software promotes the
+                        development of the internet as a public
+                        resource.
+                    </p>
+                </div>
+                </div>
+              </div>
+    
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEight" >
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                  data-bs-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+                  <p class="accordion-title">Principle 8</p>
+                  </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p class="text-principle">
+                        Transparent community-based processes promote
+                        participation, accountability and trust.
+                    </p>
+                </div>
+                </div>
+              </div>
+    
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingNine" >
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                  data-bs-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
+                  <p class="accordion-title">Principle 9</p>
+                  </button>
+                </h2>
+                <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p class="text-principle">
+                        Commercial involvement in the development of the
+                        internet brings many benefits; a balance between
+                        commercial profit and public benefit is critical.
+                    </p>
+                </div>
+                </div>
+              </div>
+    
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTen" >
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                  data-bs-target="#collapseTen" aria-expanded="true" aria-controls="collapseTen">
+                  <p class="accordion-title">Principle 10</p>
+                  </button>
+                </h2>
+                <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p class="text-principle">
+                        Magnifying the public benefit aspects of the
+                        internet is an important goal, worthy of time,
+                        attention and commitment.
+                    </p>
+                </div>
+                </div>
+              </div>
+    
+            </div>
+          </div>
+    
+
+      </div>
+
+
+    </div>
+
+ 
+
+    <br>
+
+    <footer class="footer bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
+                    <ul class="list-inline mb-2">
+                        <li class="list-inline-item"><a href="#!">About</a></li>
+                        <li class="list-inline-item">⋅</li>
+                        <li class="list-inline-item"><a href="#!">Contact</a></li>
+                        <li class="list-inline-item">⋅</li>
+                        <li class="list-inline-item"><a href="#!">Terms of Use</a></li>
+                        <li class="list-inline-item">⋅</li>
+                        <li class="list-inline-item"><a href="#!">Privacy Policy</a></li>
+                    </ul>
+                    <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2021. All Rights Reserved.</p>
+                </div>
+                <div class="col-lg-6 h-100 text-center text-lg-end my-auto">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item me-4">
+                            <a href="#!"><i class="bi-facebook fs-3"></i></a>
+                        </li>
+                        <li class="list-inline-item me-4">
+                            <a href="#!"><i class="bi-twitter fs-3"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#!"><i class="bi-instagram fs-3"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

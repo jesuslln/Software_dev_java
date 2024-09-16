@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head> 
+    <title>Contact us!</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <style>
+        h1{
+            text-align: center;
+        }
+
+        form{
+            text-align: center;
+        }
+    </style>
+
+
+</head>
+<body>
+	<h1>Contact Us!</h1>
+    <hr>
+    <br>
+    <form action="#" th:action="@{/greeting}" th:object="${greeting}" method="post">
+        <thead> <tr>
+            <th></th>
+            <th></th>
+        </tr></thead>
+
+        <tbody>
+            <tr>
+                 <td><p>Id: </p></td>
+                 <td><input type="text" th:field="*{id}" /></td>
+                
+            </tr>
+
+            <tr>
+                <td><p>Name: </p></td> 
+                <td><input type="text" th:field="*{name}"></td>
+
+            </tr>
+
+            <tr>
+                <td><p>Message:</p></td>
+                <td><textarea type="text" th:field="*{content}" /></td>
+            </tr>
+
+            <br>
+            <br>
+            <tr>
+                <td><input type="submit" value="Submit" /> </td>
+                <td><input type="reset" value="Reset" /></td>
+
+            </tr>
+
+        </tbody>
+        <!--<p>Id: <input type="text" th:field="*{id}" /></p>--> 
+        <!--<p>Name: <input type="text" th:field="*{name}"></p>-->
+        <!--<p>Message:<textarea type="text" th:field="*{content}" /></p>-->
+        <!--<p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>-->
+    </form>
+</body>
+</html>
